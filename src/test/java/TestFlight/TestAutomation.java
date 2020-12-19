@@ -30,7 +30,7 @@ public class TestAutomation {
     }
 
     @Test(priority = 2)
-    public void searchArricalCity()
+    public void searchArrivalCity()
     {
         driver.findElement(By.cssSelector("input#fsc-destination-search")).sendKeys("Ankara");
         Actions pressEnterKey = new Actions(driver);
