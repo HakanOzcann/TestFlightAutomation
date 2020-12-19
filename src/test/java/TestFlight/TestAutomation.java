@@ -18,6 +18,8 @@ public class TestAutomation {
         System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/resources/geckodriver");
         driver = new ChromeDriver();
         driver.get("https://www.skyscanner.com.tr");
+        driver.manage().window().maximize();
+
     }
 
     @Test(priority = 1)
